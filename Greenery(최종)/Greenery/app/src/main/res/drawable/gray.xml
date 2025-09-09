@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle"
+    tools:ignore="ExtraText">
+    <solid android:color="#E0E0E0"/> <!-- 회색 배경색 -->
+    <corners android:radius="10dp"/> <!-- 모서리 둥글게 설정 -->
+</shape>

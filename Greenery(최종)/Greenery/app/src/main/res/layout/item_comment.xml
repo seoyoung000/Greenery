@@ -1,0 +1,40 @@
+<!-- res/layout/item_comment.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- 댓글 작성자 -->
+    <TextView
+        android:id="@+id/commentAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="8dp"
+        android:maxWidth="200dp"
+        android:fontFamily="@font/nanumbarunpen_r"/>
+
+    <!-- 댓글 내용 -->
+    <TextView
+        android:id="@+id/textCommentBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:fontFamily="@font/nanumbarunpen_r"/>
+
+    <!-- 댓글 삭제 버튼 -->
+    <ImageButton
+        android:id="@+id/buttonDeleteComment"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_delete"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="삭제 버튼"
+        android:scaleType="centerInside"/>
+</LinearLayout>

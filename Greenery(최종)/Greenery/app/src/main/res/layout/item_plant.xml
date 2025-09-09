@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="@drawable/border"
+    android:gravity="center_vertical"> <!-- Center vertical alignment -->
+
+    <!-- 식물 사진 -->
+    <ImageView
+        android:id="@+id/plantImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_myplant_default"
+        android:background="@drawable/square_background"
+        android:scaleType="centerCrop"/>
+
+    <!-- 식물 정보 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/plantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="식물 이름"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanumbarunpen_b"/>
+
+        <TextView
+            android:id="@+id/plantSpecies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="식물 종"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/nanumbarunpen_r"/>
+
+        <TextView
+            android:id="@+id/waterInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="물 주기"
+            android:textSize="18sp"
+            android:fontFamily="@font/nanumbarunpen_r"/>
+    </LinearLayout>
+
+    <!-- 수정 및 삭제 버튼 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수정"
+            android:fontFamily="@font/nanumbarunpen_r" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:fontFamily="@font/nanumbarunpen_r"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color> <!-- 기본 초록색 -->
+    <color name="colorPrimaryDark">#388E3C</color> <!-- 어두운 초록색 -->
+    <color name="colorAccent">#81C784</color> <!-- 보조 초록색 -->
+
+    <color name="colorSecondary">#FFFFFFFF</color> <!-- 보조 색상 -->
+    <color name="colorOnSecondary">#FF000000</color> <!-- 보조 색상 위의 텍스트 색상 -->
+</resources>

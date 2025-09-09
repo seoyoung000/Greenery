@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.greenery.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home"
+        android:fontFamily="@font/nanumbarunpen_b"/>
+
+    <fragment
+        android:id="@+id/navigation_myplant"
+        android:name="com.example.greenery.ui.myplant.MyPlantFragment"
+        android:label="@string/title_myplant"
+        tools:layout="@layout/fragment_myplant"
+        android:fontFamily="@font/nanumbarunpen_b" />
+
+    <fragment
+        android:id="@+id/navigation_community"
+        android:name="com.example.greenery.ui.community.CommunityFragment"
+        android:label="@string/title_community"
+        tools:layout="@layout/fragment_community"
+        android:fontFamily="@font/nanumbarunpen_b" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.greenery.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings"
+        android:fontFamily="@font/nanumbarunpen_b"/>
+
+</navigation>

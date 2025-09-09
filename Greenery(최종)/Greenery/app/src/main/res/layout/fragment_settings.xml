@@ -1,0 +1,187 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:padding="16dp">
+
+        <!-- Profile Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_mypage_main_profile"
+                android:layout_width="60dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_mypage_profile" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/tv_mypage_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarunpen_b"
+                    android:text="홍길동"
+                    android:textColor="#5AC479"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_mypage_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarunpen_r"
+                    android:text="환영합니다."
+                    android:textColor="#9C9C9C"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Settings Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="294dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/iv_setting_toggle_waterIntervals"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumbarunpen_b"
+                android:text="물 주기"
+                android:textColor="#989898"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/iv_setting_toggle_task_notification"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumbarunpen_b"
+                android:text="할 일"
+                android:textColor="#989898"
+                android:textSize="16sp" />
+
+            <!-- Notification Time Section -->
+            <LinearLayout
+                android:id="@+id/ll_task_notification_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_task_notification_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarunpen_r"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="알림 시간 설정"
+                    android:textColor="#989898"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- 시 선택 Spinner -->
+                    <Spinner
+                        android:id="@+id/spinner_hour"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/hour" />
+
+                    <!-- 분 선택 Spinner -->
+                    <Spinner
+                        android:id="@+id/spinner_minute"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/minute" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSetTimeComplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="설정 완료"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nanumbarunpen_r"/>
+            </LinearLayout> <!-- End of ll_task_notification_time -->
+
+        </LinearLayout> <!-- End of Account Section -->
+
+        <!-- Another Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_setting_text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarunpen_b"
+                android:text="계정 상태"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <Button
+                    android:id="@+id/tv_setting_text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="로그아웃"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/nanumbarunpen_b"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/tv_setting_text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nanumbarunpen_b"
+                    android:text="계정삭제"
+                    android:textColor="#F00"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout> <!-- End of Another Section -->
+    </LinearLayout> <!-- End of Main LinearLayout -->
+
+</ScrollView>
+
+    <!-- BottomNavigationView should be outside of ScrollView -->
+

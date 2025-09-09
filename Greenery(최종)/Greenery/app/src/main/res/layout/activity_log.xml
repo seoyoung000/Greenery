@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.community.LogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="식물 고민을 공유해요!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nanumbarunpen_r"/>
+
+        <!-- Title Label -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nanumbarunpen_r"/>
+
+        <!-- Title Input -->
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목"
+            android:gravity="start"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nanumbarunpen_r"/>
+
+        <!-- Description Label -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상세정보"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nanumbarunpen_r"/>
+
+        <!-- Description Input -->
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/border"
+            android:gravity="top"
+            android:hint="식물의 문제를 입력해 주세요."
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nanumbarunpen_r"/>
+
+        <!-- Image Selection Buttons -->
+        <LinearLayout
+            android:id="@+id/imageButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/buttonDeleteImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="이미지 삭제"
+                android:visibility="gone"
+                android:fontFamily="@font/nanumbarunpen_r"/>
+
+            <Button
+                android:id="@+id/buttonSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이미지 선택"
+                android:fontFamily="@font/nanumbarunpen_r"/>
+        </LinearLayout>
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- OK and Cancel Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/buttonOK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="작성 완료"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/nanumbarunpen_r"/>
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="취소"
+                android:fontFamily="@font/nanumbarunpen_r"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewLink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="@string/link"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonOK"
+            app:layout_constraintVertical_bias="0.354"
+            android:fontFamily="@font/nanumbarunpen_r"/>
+    </LinearLayout>
+</ScrollView>

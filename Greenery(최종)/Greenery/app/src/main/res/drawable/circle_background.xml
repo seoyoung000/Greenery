@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size android:width="56dp" android:height="56dp" />
+    <solid android:color="@color/colorAccent" /> <!-- 필요에 따라 배경색 설정 -->
+</shape>

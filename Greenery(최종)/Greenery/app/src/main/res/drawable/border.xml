@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle"
+    tools:ignore="ExtraText">
+    <solid android:color="@android:color/transparent"/> <!-- 배경색을 투명하게 설정 -->
+    <stroke
+        android:color="@color/colorAccent"
+        android:width="2dp"/> <!-- 테두리 색상 -->
+    <corners android:radius="5dp"/> <!-- 모서리 둥글게 -->
+</shape>

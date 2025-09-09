@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="홈"
+        android:fontFamily="@font/nanumbarunpen_b" />
+
+    <item
+        android:id="@+id/navigation_myplant"
+        android:icon="@drawable/ic_myplant"
+        android:title="내 식물"
+        android:fontFamily="@font/nanumbarunpen_b" />
+
+    <item
+        android:id="@+id/navigation_community"
+        android:icon="@drawable/ic_community"
+        android:title="커뮤니티"
+        android:fontFamily="@font/nanumbarunpen_b" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="설정"
+        android:fontFamily="@font/nanumbarunpen_b" />
+
+</menu>
